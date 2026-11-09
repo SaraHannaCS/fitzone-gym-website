@@ -1,15 +1,15 @@
-Sioufi Taxi – Dynamic Web Application
+FitZone Gym – Dynamic Gym Website
 
-A multi-page website developed for a taxi service as an independent web development project. The website provides visitors with information about the service and an interactive user experience.
+A modern, multi-page gym website concept developed as an independent web development project. The website aims to present gym information, services, and facilities through an engaging and user-friendly interface.
 
 Features
-- Responsive and user-friendly website design
-- Taxi booking form
-- Contact form
-- Image gallery
-- Search and filtering functionality
+- Responsive website layout
+- Modern and attractive design
+- Multiple website sections and pages
 - Interactive website elements
-- Organized multi-page navigation
+- Organized navigation
+- Gym services and information presentation
+- Image gallery
 
 Technologies Used
 - HTML5
@@ -20,9 +20,10 @@ Technologies Used
 - JSON
 
 Project Purpose
-This project was developed to apply web development concepts and strengthen practical skills in front-end development, interactive functionality, and website design.
+This project was developed to improve practical web development skills, apply front-end programming concepts, and gain experience creating interactive and responsive websites.
 
 Developer
+
 Sara Hanna
 Computer Science Student  
 Lebanese Canadian University (LCU)
