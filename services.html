@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | FitZone Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <span class="brand-icon">⚡</span>
+        <h1>FitZone</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"></button>
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="darkModeToggle" class="dark-toggle">🌙 Dark Mode</button>
+</header>
+
+<main>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag centered light">Training Programs</span>
+            <h2>Our Training Programs</h2>
+            <p>Choose the perfect program based on your fitness goals and lifestyle. All programs are available for Basic, Premium, and Elite members.</p>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP PLANS TABLE -->
+    <section class="plans-section">
+        <span class="section-tag centered">Membership Plans</span>
+        <h2>Choose Your Plan</h2>
+        <p class="section-intro">All plans include full gym access. Higher tiers unlock coaching, nutrition, and advanced tracking.</p>
+        <div class="plans-grid">
+            <article class="plan-card">
+                <div class="plan-header">
+                    <h3>Basic</h3>
+                    <div class="plan-price">$40<span>/mo</span></div>
+                </div>
+                <ul class="plan-features">
+                    <li>✔ Full gym access</li>
+                    <li>✔ Locker & shower</li>
+                    <li>✔ Group classes (2/week)</li>
+                    <li class="muted">✗ Personal coaching</li>
+                    <li class="muted">✗ Nutrition plan</li>
+                    <li class="muted">✗ Body tracking</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline">Get Started</a>
+            </article>
+            <article class="plan-card featured-plan">
+                <div class="plan-badge">Most Popular</div>
+                <div class="plan-header">
+                    <h3>Premium</h3>
+                    <div class="plan-price">$75<span>/mo</span></div>
+                </div>
+                <ul class="plan-features">
+                    <li>✔ Full gym access</li>
+                    <li>✔ Locker & shower</li>
+                    <li>✔ Unlimited group classes</li>
+                    <li>✔ 2 coaching sessions/month</li>
+                    <li>✔ Nutrition guidance</li>
+                    <li class="muted">✗ Body tracking</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </article>
+            <article class="plan-card">
+                <div class="plan-header">
+                    <h3>Elite</h3>
+                    <div class="plan-price">$120<span>/mo</span></div>
+                </div>
+                <ul class="plan-features">
+                    <li>✔ Full gym access</li>
+                    <li>✔ Locker & shower</li>
+                    <li>✔ Unlimited group classes</li>
+                    <li>✔ Unlimited coaching</li>
+                    <li>✔ Full nutrition program</li>
+                    <li>✔ Monthly body tracking</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline">Get Started</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- SEARCH + FILTER -->
+    <section class="services-section">
+        <span class="section-tag centered">Browse Programs</span>
+        <h2>Explore Our Services</h2>
+        <p class="section-intro">Use the search and filter tools below to find the perfect program for your goals.</p>
+
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="🔍 Search by program name...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Strength">Strength</option>
+                <option value="Cardio">Cardio</option>
+                <option value="Yoga">Yoga</option>
+            </select>
+            <select id="sortFilter">
+                <option value="default">Sort By</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A–Z</option>
+            </select>
+        </div>
+
+        <p id="noResults" class="no-results-msg" style="display:none;">No programs found matching your criteria.</p>
+
+        <div id="servicesContainer" class="card-container">
+            <p class="loading-msg">Loading programs...</p>
+        </div>
+    </section>
+
+    <!-- WHY OUR PROGRAMS WORK -->
+    <section class="why-section">
+        <span class="section-tag centered">The FitZone Method</span>
+        <h2>Why Our Programs Deliver Results</h2>
+        <div class="features-grid">
+            <article class="feature-card">
+                <div class="feature-icon">🔬</div>
+                <h3>Science-Based Training</h3>
+                <p>Every program is built on proven sports science principles — progressive overload, periodization, and recovery planning.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Progress Monitoring</h3>
+                <p>Regular assessments track your strength, endurance, and body composition so we can adjust your plan for maximum results.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">🥗</div>
+                <h3>Nutrition Integration</h3>
+                <p>Premium and Elite programs pair training with personalized meal planning to ensure your nutrition supports your goals.</p>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h3>⚡ FitZone</h3>
+            <p>The premier fitness destination in Jounieh, Lebanon. Transforming lives since 2015.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>📍 Jounieh, Mount Lebanon</p>
+            <p><a href="tel:0096171277884">📞 +961 71 277 884</a></p>
+             <p><a href="mailto:sarahanna1222@gmail.com">📧 info@fitzone.lb</a></p>
+            <p>🕐 Mon–Sat: 6:00 AM – 10:00 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 FitZone Gym. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

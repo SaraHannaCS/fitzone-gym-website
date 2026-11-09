@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | FitZone Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <span class="brand-icon">⚡</span>
+        <h1>FitZone</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"></button>
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="darkModeToggle" class="dark-toggle">🌙 Dark Mode</button>
+</header>
+
+<main>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag centered light">FitZone In Action</span>
+            <h2>Our Gallery</h2>
+            <p>A visual glimpse into the FitZone experience — our equipment, training sessions, and community events.</p>
+        </div>
+    </section>
+
+    <!-- FILTER BUTTONS -->
+    <section class="gallery-filter-section">
+        <div class="gallery-buttons">
+            <button class="filter-btn active-btn" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="equipment">Equipment</button>
+            <button class="filter-btn" data-filter="training">Training</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+        <p class="gallery-count">Showing <span id="galleryCount">9</span> photos</p>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="gallery-grid-section">
+        <div class="gallery-grid" id="galleryGrid">
+            <img src="images/Gym Equipment.jpg"          class="gallery-item equipment" alt="State-of-the-art gym equipment at FitZone">
+            <img src="images/Training session.jpg"       class="gallery-item training"  alt="Intense training session with certified coach">
+            <img src="images/Fitness event.jpg"          class="gallery-item events"    alt="FitZone community fitness event">
+            <img src="images/Treadmill.jpg"              class="gallery-item equipment" alt="Professional treadmill machines cardio area">
+            <img src="images/Trainer helping client.jpg" class="gallery-item training"  alt="Personal trainer guiding a client through exercises">
+            <img src="images/Competition event.jpg"      class="gallery-item events"    alt="In-gym fitness competition event">
+            <img src="images/Weights.jpg"                class="gallery-item equipment" alt="Free weights and dumbbell rack">
+            <img src="images/Yoga training.jpg"          class="gallery-item training"  alt="Yoga training class with certified instructor">
+            <img src="images/Fitness gathering.jpg"      class="gallery-item events"    alt="FitZone member community gathering and celebration">
+        </div>
+    </section>
+
+</main>
+
+<!-- LIGHTBOX OVERLAY -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close image preview">&times;</button>
+    <button id="lightboxPrev" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <img id="lightboxImg" src="" alt="Enlarged gallery image">
+    <button id="lightboxNext" class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h3>⚡ FitZone</h3>
+            <p>The premier fitness destination in Jounieh, Lebanon. Transforming lives since 2015.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>📍 Jounieh, Mount Lebanon</p>
+            <p><a href="tel:0096171277884">📞 +961 71 277 884</a></p>
+             <p><a href="mailto:sarahanna1222@gmail.com">📧 info@fitzone.lb</a></p>
+            <p>🕐 Mon–Sat: 6:00 AM – 10:00 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 FitZone Gym. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

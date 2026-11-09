@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym | Push Beyond Your Limits</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <span class="brand-icon">⚡</span>
+        <h1>FitZone</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="darkModeToggle" class="dark-toggle">🌙 Dark Mode</button>
+</header>
+
+<!-- HERO -->
+<section class="video-hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/Gym.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <div class="hero-badge">PREMIUM GYM — JOUNIEH, LEBANON</div>
+        <h2>Push Beyond<br><span class="accent-text">Your Limits</span></h2>
+        <p>Elite fitness experience with world-class trainers, cutting-edge equipment, and powerful transformation programs designed to unlock your full potential.</p>
+        <div class="hero-cta">
+            <a href="contact.html" class="btn btn-primary">Start Your Journey</a>
+            <a href="services.html" class="btn btn-outline">Explore Programs</a>
+        </div>
+    </div>
+</section>
+
+<!-- STATS TICKER -->
+<section class="stats-bar">
+    <div class="stat-item">
+        <span class="stat-number" data-target="2500">0</span>
+        <span class="stat-label">Happy Members</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+        <span class="stat-number" data-target="18">0</span>
+        <span class="stat-label">Expert Coaches</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+        <span class="stat-number" data-target="10">0</span>
+        <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+        <span class="stat-number" data-target="98">0</span>
+        <span class="stat-label">% Satisfaction</span>
+    </div>
+</section>
+
+<!-- SPLIT INTRO -->
+<section class="split-section">
+    <div class="split-image">
+        <img src="images/gym-interior.jpg" alt="FitZone gym interior with modern equipment">
+        <div class="split-badge">Est. 2015</div>
+    </div>
+    <div class="split-text">
+        <span class="section-tag">About FitZone</span>
+        <h2>Train In A Premium Environment</h2>
+        <p>FitZone combines cutting-edge technology, modern equipment, and expert coaching to create an inspiring training atmosphere for every member — from beginner to elite athlete.</p>
+        <ul class="feature-list">
+            <li><span class="check">✔</span> Certified Personal Coaches</li>
+            <li><span class="check">✔</span> Modern High-End Equipment</li>
+            <li><span class="check">✔</span> Personalized Nutrition Programs</li>
+            <li><span class="check">✔</span> Dedicated Cardio & Strength Zones</li>
+            <li><span class="check">✔</span> Group Classes & Community Events</li>
+        </ul>
+        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section">
+    <span class="section-tag centered">Why FitZone</span>
+    <h2>Everything You Need To Succeed</h2>
+    <p class="section-intro">We built FitZone around one idea: that every person deserves access to world-class fitness.</p>
+    <div class="features-grid">
+        <article class="feature-card">
+            <div class="feature-icon">🏋️</div>
+            <h3>Elite Equipment</h3>
+            <p>State-of-the-art machines sourced from the world's leading fitness manufacturers, serviced and updated regularly.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">👨‍🏫</div>
+            <h3>Expert Coaches</h3>
+            <p>Certified trainers with specializations in strength, cardio, yoga, rehabilitation, and sports performance.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">📋</div>
+            <h3>Custom Programs</h3>
+            <p>Tailored fitness and nutrition plans built specifically for your body type, goals, and lifestyle.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Strong Community</h3>
+            <p>Monthly events, group challenges, and a supportive member community to keep you motivated every day.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Progress Tracking</h3>
+            <p>Monthly body assessments, performance benchmarks, and data-driven coaching to ensure real results.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">🕕</div>
+            <h3>Flexible Hours</h3>
+            <p>Open 6 AM to 10 PM, Monday through Saturday, to fit any schedule — early birds and night owls welcome.</p>
+        </article>
+    </div>
+</section>
+
+<!-- PARALLAX CTA -->
+<section class="parallax-section">
+    <div class="parallax-content">
+        <span class="section-tag centered light">Limited Spots Available</span>
+        <h2>Your Transformation Starts Today</h2>
+        <p>Join one of the fastest-growing fitness communities in Lebanon. First session is free.</p>
+        <a href="contact.html" class="btn btn-primary">Become A Member</a>
+    </div>
+</section>
+
+<!-- FEATURED PROGRAMS (loaded via AJAX from services.json) -->
+<section class="featured-programs">
+    <span class="section-tag centered">Top Programs</span>
+    <h2>Featured Training Programs</h2>
+    <p class="section-intro">Handpicked by our coaches as the most effective programs for rapid transformation.</p>
+    <div id="featuredContainer" class="card-container">
+        <p class="loading-msg">Loading programs...</p>
+    </div>
+    <div class="centered-link">
+        <a href="services.html" class="btn btn-outline">View All Programs</a>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+    <span class="section-tag centered">Member Stories</span>
+    <h2>Real Results, Real People</h2>
+    <div class="testimonial-container">
+        <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"FitZone completely changed my lifestyle. The trainers are professional, the environment is motivating, and the results speak for themselves."</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">AK</div>
+                <div>
+                    <h4>Ahmad Khoury</h4>
+                    <span>Member since 2022</span>
+                </div>
+            </div>
+        </article>
+        <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Best gym I've ever joined. The coaching programs are structured, results-oriented, and the community keeps you accountable. Highly recommended!"</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">SM</div>
+                <div>
+                    <h4>Sara Mansour</h4>
+                    <span>Member since 2021</span>
+                </div>
+            </div>
+        </article>
+        <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Lost 18kg in 4 months with the Elite program. The nutrition guidance combined with the training plan is incredibly effective. FitZone delivers!"</p>
+            <div class="testimonial-author">
+                <div class="author-avatar">KN</div>
+                <div>
+                    <h4>Karim Nassar</h4>
+                    <span>Member since 2023</span>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h3>⚡ FitZone</h3>
+            <p>The premier fitness destination in Jounieh, Lebanon. Transforming lives since 2015.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>📍 Jounieh, Mount Lebanon</p>
+           <p><a href="tel:0096171277884">📞 +961 71 277 884</a></p>
+             <p><a href="mailto:sarahanna1222@gmail.com">📧 info@fitzone.lb</a></p>
+            <p>🕐 Mon–Sat: 6:00 AM – 10:00 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 FitZone Gym. All rights reserved. Built with passion for fitness.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

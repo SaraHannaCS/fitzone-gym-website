@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Register | FitZone Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <span class="brand-icon">⚡</span>
+        <h1>FitZone</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"></button>
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <button id="darkModeToggle" class="dark-toggle">🌙 Dark Mode</button>
+</header>
+
+<main>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag centered light">Get In Touch</span>
+            <h2>Contact Us</h2>
+            <p>We are here to help. Reach out and our team will get back to you within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO GRID -->
+    <section class="contact-info-section">
+        <div class="contact-info-grid">
+            <article class="contact-info-card">
+                <div class="contact-icon">📍</div>
+                <h3>Address</h3>
+                <p>Jounieh, Mount Lebanon, Lebanon</p>
+            </article>
+            <article class="contact-info-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p>+961 71 277 884</p>
+            </article>
+            <article class="contact-info-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>info@fitzone.lb</p>
+            </article>
+            <article class="contact-info-card">
+                <div class="contact-icon">🕐</div>
+                <h3>Opening Hours</h3>
+                <p>Mon – Sat: 6:00 AM – 10:00 PM</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-section">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <span class="section-tag">Send a Message</span>
+                <h2>We'd Love To Hear From You</h2>
+                <p>Fill out the form below and we will respond as soon as possible.</p>
+            </div>
+            <form id="contactForm" novalidate>
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" placeholder="Enter your full name" autocomplete="name">
+                <span class="field-error" id="nameError"></span>
+
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" placeholder="Enter your email address" autocomplete="email">
+                <span class="field-error" id="emailError"></span>
+
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="text" id="phone" placeholder="e.g. 70123456" autocomplete="tel">
+                <span class="field-error" id="phoneError"></span>
+
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option value="">-- Select a subject --</option>
+                    <option value="Membership Inquiry">Membership Inquiry</option>
+                    <option value="Personal Coaching">Personal Coaching</option>
+                    <option value="Group Classes">Group Classes</option>
+                    <option value="Nutrition Plans">Nutrition Plans</option>
+                    <option value="General Question">General Question</option>
+                </select>
+
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" rows="5" placeholder="Write your message (minimum 20 characters)..."></textarea>
+                <span class="field-error" id="messageError"></span>
+                <span class="char-count" id="charCount">0 / 20 characters minimum</span>
+
+                <button type="submit" class="btn btn-primary full-width">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section class="registration-section">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <span class="section-tag">Become A Member</span>
+                <h2>Member Registration</h2>
+                <p>Create your FitZone account and start your transformation journey today.</p>
+            </div>
+            <form id="registerForm" novalidate>
+                <label for="username">Username <span class="required">*</span></label>
+                <input type="text" id="username" placeholder="Choose a username (min. 4 characters)">
+                <span class="field-error" id="usernameError"></span>
+
+                <label for="regEmail">Email Address <span class="required">*</span></label>
+                <input type="email" id="regEmail" placeholder="Enter your email address">
+                <span class="field-error" id="regEmailError"></span>
+
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" placeholder="Choose a strong password (min. 8 characters)">
+                <div class="strength-bar-container">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+                <p id="strengthMessage" class="strength-msg"></p>
+
+                <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+                <input type="password" id="confirmPassword" placeholder="Repeat your password">
+                <span class="field-error" id="confirmError"></span>
+
+                <label for="membershipType">Membership Plan <span class="required">*</span></label>
+                <select id="membershipType">
+                    <option value="">-- Select a membership plan --</option>
+                    <option value="Basic">Basic — $40/month</option>
+                    <option value="Premium">Premium — $75/month</option>
+                    <option value="Elite">Elite — $120/month</option>
+                </select>
+                <span class="field-error" id="membershipError"></span>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" autocomplete="bday">
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="termsCheck">
+                    <label for="termsCheck" class="inline-label">I agree to the FitZone Terms & Conditions and Privacy Policy</label>
+                </div>
+                <span class="field-error" id="termsError"></span>
+
+                <button type="submit" class="btn btn-primary full-width">Register Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <section class="map-section">
+        <span class="section-tag centered">Find Us</span>
+        <h2>Our Location</h2>
+        <p class="section-intro">FitZone is located in the heart of Jounieh, Mount Lebanon — easy to find, easy to reach.</p>
+        <div class="map-embed">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.0!2d35.6178!3d33.9808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU4JzUxLjMiTiAzNcKwMzcnMDQuMSJF!5e0!3m2!1sen!2slb!4v1234567890"
+                width="100%"
+                height="420"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="FitZone location map in Jounieh Lebanon">
+            </iframe>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h3>⚡ FitZone</h3>
+            <p>The premier fitness destination in Jounieh, Lebanon. Transforming lives since 2015.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>📍 Jounieh, Mount Lebanon</p>
+           <p><a href="tel:0096171277884">📞 +961 71 277 884</a></p>
+             <p><a href="mailto:sarahanna1222@gmail.com">📧 info@fitzone.lb</a></p>
+            <p>🕐 Mon–Sat: 6:00 AM – 10:00 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 FitZone Gym. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

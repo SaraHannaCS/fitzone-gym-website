@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Strength Training",
+        "category": "Strength",
+        "price": 60,
+        "description": "Build raw strength with progressive overload programs designed by our certified powerlifting coaches. Suitable for all levels.",
+        "image": "images/Weights.jpg"
+    },
+    {
+        "name": "Cardio Blast",
+        "category": "Cardio",
+        "price": 45,
+        "description": "High-intensity treadmill and machine cardio sessions designed to boost cardiovascular health and maximize calorie burn.",
+        "image": "images/Treadmill.jpg"
+    },
+    {
+        "name": "Yoga Flow",
+        "category": "Yoga",
+        "price": 50,
+        "description": "Improve flexibility, balance, and mental focus with guided Hatha and Vinyasa yoga classes for all fitness levels.",
+        "image": "images/Yoga training.jpg"
+    },
+    {
+        "name": "Powerlifting Program",
+        "category": "Strength",
+        "price": 75,
+        "description": "Olympic-style powerlifting training with periodized programming, competition preparation, and form coaching from certified specialists.",
+        "image": "images/Gym Equipment.jpg"
+    },
+    {
+        "name": "HIIT Cardio",
+        "category": "Cardio",
+        "price": 55,
+        "description": "High-Intensity Interval Training combining explosive cardio bursts with active rest periods for maximum fat loss and endurance.",
+        "image": "images/Training session.jpg"
+    },
+    {
+        "name": "Morning Yoga",
+        "category": "Yoga",
+        "price": 40,
+        "description": "Start your day with a 45-minute sunrise yoga session focused on energizing stretches, breathing, and mindfulness practice.",
+        "image": "images/Fitness gathering.jpg"
+    }
+]
