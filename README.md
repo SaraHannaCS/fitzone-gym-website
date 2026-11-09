@@ -23,7 +23,6 @@ Project Purpose
 This project was developed to improve practical web development skills, apply front-end programming concepts, and gain experience creating interactive and responsive websites.
 
 Developer
-
 Sara Hanna
 Computer Science Student  
 Lebanese Canadian University (LCU)
